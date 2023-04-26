@@ -1,0 +1,13 @@
+I am accepting the proposal. Pl go through my below comments and adapt your project accordingly. (Feel free to meet me for a discussion if required.)
+
+Your abstract does not convey much specifics. I accept that the project should go with the overarching theme as per the project guidelines. 
+
+For projects like these you can expect three pipelines: P1, P2 and P3.
+
+P1 involves options for ingesting your data — your interface should should support necessary options for specifying the source. Then from a list of pre-processing operations you should be able to design a multi-level pipeline. And, options for executing them. On finishing, the data should be loaded on to HDFS/MongoDB (data store) — of course Hive/Pig scripts can be used internally for pre-processing.
+
+P2 involves pipelines for retrieving appropriate documents from your data store  based on keyword search. 
+
+P3 involves data processing and analytical tasks, fetching data from the data store. And, proper embedding of the visualisation tool on your interface is also important here. 
+
+As per my understanding your proposal touches all the three pipelines. However, I would suggest you to focus on either P1 and P2, or P2 and P3, due to time limitations and since there are specific challenges associated with each stage — for instance P3 needs integration of data visualisation with your front-end.
