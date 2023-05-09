@@ -11,3 +11,301 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.navbar{
+  padding-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top:0;
+  cursor: pointer;
+  height: 200px;
+}
+
+.logo{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img{
+  /* border: 3px solid white; */
+  /* border-radius: %; */
+  width: 40%;
+}
+
+.nav-list{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 65%;
+}
+
+.nav-list li{ 
+  list-style: none;
+  padding: 64px 30px;
+}
+
+.nav-list li a{
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-decoration: none;
+  color: white;
+}
+
+.nav-list li a:hover{
+  color: green;
+}
+
+.rightNav{
+  display: flex;
+  justify-content: right;
+  width: 35%;
+  text-align: right;
+}
+
+#search{
+  padding: 4px;
+  font-size: 20px;
+  border-color: 3px solid black;
+  border-radius: 4px;
+}
+
+
+.background{
+  background: rgba(0, 0, 0, 0.7) url('../image/bg.jpg');
+  background-size: cover;
+  background-blend-mode: darken;
+}
+
+.firstSection{
+  height: 100vh;
+}
+
+.box-main{
+  padding-top: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 60%;
+  margin: auto;
+  /* height: 40%;  I have already given padding top in second-half */
+}
+
+.first-half{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.second-half{
+  width: 30%;
+  padding-left: 40px;
+  padding-top: 40px;
+}
+
+.second-half img{
+  display: flex;
+  border: 4px solid white;
+  border-radius: 50px;
+  width:100%;
+  height:100%;
+  margin: auto;
+}
+
+.text-big{
+  padding-bottom: 10px;
+  font-size: 40px;
+}
+
+.text-small{
+  font-size: 25px;
+  padding-bottom: 20px;
+}
+
+.btn{
+  font-size: 20px;
+  padding: 10px 20px;
+  margin: 30px 0px;
+  border: 3px solid white;
+  border-radius: 10px;
+  background: none;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-sm{
+  padding: 6px 8px;
+  margin: 0px 0px;
+  border: 3px solid white;
+  font-size: 17px;
+  border-radius: 6px;
+  background: none;
+  color: white;
+  cursor: pointer; 
+}
+
+.btn:hover{
+  background-color: green;
+  color: white;
+}
+
+.section{
+  background-color: rgb(226, 219, 219);
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  max-width: 80%;
+  margin:auto;
+}
+
+.left{
+  flex-direction: row-reverse;
+}
+
+.paras{
+  padding: 0px 58px;
+  padding-top: 50px;
+}
+
+.thumbnail img{
+  margin-right: 10px;
+  margin-left: 10px;
+  /* justify-content: center; */
+  width: 400px;
+  height: 400px;
+  border: 5px solid black;
+  border-radius: 20px;
+}
+
+.contact{
+  height: 100%;
+}
+
+.text-center{
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.form{
+  text-align: center;
+  max-width: 1500px;
+  margin: auto;
+}
+
+.contents{
+  margin: 3px 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 4px;
+  width: 100%;
+  font-size: 20px;
+  border: 2px solid rgb(160, 149, 149);
+  border-radius: 6px;
+}
+
+.foot{
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.burger{
+  display: none;
+  position: absolute;
+  cursor: pointer;
+  right: 2%;
+  top: 15px;
+}
+
+.line{
+  width: 33px;
+  background-color: white;
+  height: 4px;
+  margin: 5px 3px;
+}
+
+@media only screen and (max-width: 1468px){
+  .nav-list{
+      flex-direction: column;
+  }
+
+  .nav-list li{
+      padding: 4px;
+  }
+
+  .btn-sm{
+      margin: 0px 120px;
+  }
+
+  .rightNav{
+      flex-direction: column;
+      padding-bottom: 10px;
+  }
+
+  #search{
+      width: 100%;
+  }
+
+  .navbar{
+      height: 300px;
+      flex-direction: column;
+      transition: all 0.3s ease-out;
+  }
+
+  .burger{
+      display: block;
+  }
+
+  .h-nav{
+      height: 72px;
+  }
+
+  .v-class{
+      opacity: 0;
+  }
+  
+  .box-main{
+      flex-direction: column-reverse;
+      text-align: center;
+      max-width: 100%;
+  }
+
+  .second-half img{
+      justify-content: center;
+      margin-bottom: 20px;
+  }
+
+  .text-small{
+      text-align: center;
+  }
+
+  .text-big{
+      text-align: center;
+  }
+
+  .section{
+      padding-top: 20px;
+      flex-direction: column;
+  }
+}
