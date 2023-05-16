@@ -86,13 +86,13 @@ html{
 
 
 .background{
-  background: rgba(0, 0, 0, 0.7) url('../image/bg.jpg');
+  background: rgba(0, 0, 0, 0.7) url('../image/bg4.jpg');
   background-size: cover;
   background-blend-mode: darken;
 }
 
 .firstSection{
-  height: 100vh;
+  height: 50vh;
 }
 
 .box-main{
@@ -159,6 +159,44 @@ html{
   background: none;
   color: white;
   cursor: pointer; 
+}
+
+.btn-choices{
+  font-size: 30px;
+  padding: 10px 20px;
+  /* margin: 30px 0px; */
+  border: 3px solid green;
+  border-radius: 10px;
+  background: none;
+  color: black;
+  cursor: pointer;
+  /* border: 1px black; */
+  /* align-items: center; */
+  margin-left: 40%;
+  margin-right: 50%;
+  width: 20%;
+}
+
+
+.btn-upload{
+  font-size: 30px;
+  padding: 10px 20px;
+  /* margin: 30px 0px; */
+  border: 3px solid white;
+  border-radius: 10px;
+  background: none;
+  color: white;
+  cursor: pointer;
+  /* border: 1px black; */
+  /* align-items: center; */
+  /* margin-left: 0%; */
+  /* margin-right: 50%; */
+  width: 40%;
+}
+
+
+.h1 {
+  margin-left: 40%;
 }
 
 .btn:hover{
@@ -243,6 +281,37 @@ html{
   background-color: white;
   height: 4px;
   margin: 5px 3px;
+}
+
+.footer {
+  text-align: center;
+  padding: var(--gutter-medium) 0 var(--gutter-normal);
+}
+
+.footer__social-links {
+  display: flex;
+  justify-content: center;
+  padding: var(--gutter-normal) 0;
+  list-style: none;
+}
+
+.footer__social-link-item:not(:last-of-type) {
+  margin-right: var(--gutter-small);
+}
+
+.footer__social-image {
+  height: 4rem;
+}
+
+.footer__github-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__github-buttons iframe {
+  height: 2.5rem;
+  width: 84px;
+  transform: translateY(3px);
 }
 
 @media only screen and (max-width: 1468px){
