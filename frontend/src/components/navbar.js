@@ -11,7 +11,7 @@ const Navbar = () =>{
             </ul>
 
             <div class="rightNav v-class">
-                <h1 style={{"color":"white"}}>NoSQL Final Project</h1>
+                <h1 style={{"color":"white"}}>RailDB</h1>
                 {/* <input type="text" name="search" id="search" /> */}
                 {/* <button class="btn btn-sm">Search</button> */}
             </div>
